@@ -7,10 +7,13 @@
 <body>
 
     <h3>Timer Generator</h3>
-    <p>Input Unix timestamp:</p>
-    <input id="unix">
+    <p>Leave the UNIX timestamp empty if you want to use the date picker.</p>
+    <input id="unix" placeholder="UNIX Timestamp"><br><br>
+    <input type="date" id="date"><br>
+    <input TYPE="time" id="time">
     <button id="gen">Generate</button>
-
+    
+    <script src="/js/unixconv.js"></script>
     <script src="/js/generate.js"></script>
-    <script></script>
+    
 </body>
