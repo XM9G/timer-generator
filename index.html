@@ -2,19 +2,22 @@
 
 <head>
     <title>XM9G's Tools</title>
+    <link rel="stylesheet" href="/css/stylesheet.css">
 </head>
 
 <body>
     <h1>XM9G's Tools</h1>
 
-    <h2>Timer Generator</h2>
-    <p>Leave the UNIX timestamp empty if you want to use the date picker.</p>
-    <input id="unix" placeholder="UNIX Timestamp"><br><br>
-    <input type="date" id="date"><br>
-    <input TYPE="time" id="time">
-    <button id="gen">Generate</button>
-    
-    <script src="/js/unixconv.js"></script>
-    <script src="/js/generate.js"></script>
-    
+    <div class="tool">
+        <h2>Timer Generator</h2>
+        <p>Leave the UNIX timestamp empty if you want to use the date picker.</p>
+        <input id="unix" placeholder="UNIX Timestamp"><br><br>
+        <input type="date" id="date"><br>
+        <input TYPE="time" id="time">
+        <button id="gen">Generate</button>
+
+        <script src="/js/unixconv.js"></script>
+        <script src="/js/generate.js"></script>
+    </div>
+
 </body>
