@@ -9,6 +9,7 @@ gen.addEventListener("click", function () {
     const timeInput = document.getElementById("unix").value;
     const titleInput = document.getElementById("title").value;
     const show = document.getElementById("show-title").checked;
+    const font = document.getElementById("fontstyle").checked;
 
 
     if (timeInput !== "") {

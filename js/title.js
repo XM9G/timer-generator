@@ -5,3 +5,8 @@ if (showValue === "false") {
     console.log(showValue)
     document.getElementById("name").style.display = "none";
 }
+
+if (showValue === "false") {
+    console.log(showValue)
+    document.getElementById("name").style.display = "none";
+}
