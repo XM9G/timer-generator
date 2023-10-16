@@ -3,6 +3,19 @@
 <head>
     <title>XM9G's Tools</title>
     <link rel="stylesheet" href="/css/stylesheet.css">
+
+    <meta property="og:site_name" content="XM9G's Tools" />
+    <meta property="og:title" content="XM9G's Tools" />
+    <meta property="og:description" content="Various tools such as a countdown/timer generator." />
+
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "jbe8eazn0b");
+    </script>
+    
 </head>
 
 <body>
@@ -12,8 +25,9 @@
         <h2>Timer Generator</h2>
         <p>Leave the UNIX timestamp empty if you want to use the date picker.</p>
         <input id="unix" placeholder="UNIX Timestamp"><br><br>
+        Date:<br><br>
         <input type="date" id="date"><br>
-        <input TYPE="time" id="time">
+        <input TYPE="time" id="time"><br><br>
         <button id="gen">Generate</button>
 
         <script src="/js/unixconv.js"></script>
