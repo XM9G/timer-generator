@@ -9,13 +9,13 @@
     <meta property="og:description" content="Various tools such as a countdown/timer generator." />
 
     <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
         })(window, document, "clarity", "script", "jbe8eazn0b");
     </script>
-    
+
 </head>
 
 <body>
@@ -28,6 +28,9 @@
         Date:<br><br>
         <input type="date" id="date"><br>
         <input TYPE="time" id="time"><br><br>
+        Info:<br><br>
+        <input id="title" placeholder="Title"><br>
+        <input id="show-title" type="checkbox">Show title on page<br><br>
         <button id="gen">Generate</button>
 
         <script src="/js/unixconv.js"></script>
