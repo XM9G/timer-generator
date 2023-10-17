@@ -31,8 +31,19 @@ const showValue = getURLParameter("show");
 
 if (showValue !== null) {
   // Use the timeValue variable as needed
-  console.log("The value of title is: " + showValue);
+  console.log("The value of show title is: " + showValue);
 } else {
   // Handle the case where the parameter is not present in the URL
   console.log("The 'show' parameter is not present in the URL.");
+}
+
+const fontValue = getURLParameter("font");
+
+
+if (fontValue !== null) {
+  // Use the timeValue variable as needed
+  console.log("The value of font is: " + fontValue);
+} else {
+  // Handle the case where the parameter is not present in the URL
+  console.log("The 'font' parameter is not present in the URL.");
 }
