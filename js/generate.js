@@ -9,8 +9,10 @@ gen.addEventListener("click", function () {
     const timeInput = document.getElementById("unix").value;
     const titleInput = document.getElementById("title").value;
     const show = document.getElementById("show-title").checked;
-    const font = document.getElementById("fontstyle").FIX THIS PART;
 
+    // Get the selected option from the "fontstyle" select element
+    const fontSelect = document.getElementById("fontstyle");
+    const font = fontSelect.options[fontSelect.selectedIndex].value;
 
     if (timeInput !== "") {
         url += 'time=' + timeInput;
@@ -23,13 +25,10 @@ gen.addEventListener("click", function () {
         url += '&title=' + encodeURIComponent(titleInput);
         if (show !== "") {
             url += '&show=' + encodeURIComponent(show);
-
         }
     }
-
     if (font !== "") {
-        url += '&font=' + encodeURIComponent(show);
-
+        url += '&font=' + encodeURIComponent(font);
     }
 
     window.open(url);
