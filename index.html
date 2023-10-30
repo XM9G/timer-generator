@@ -22,28 +22,43 @@
 
 <body>
     <h1>Tools</h1>
+    <ul style="list-style-type: none;">
+        <li>
+            <div class="tool">
+                <h2>Timer Generator</h2>
+                <p>Copy the url on the page that opens to keep the timer.</p>
+                <p>Leave the UNIX timestamp empty if you want to use the date picker.</p>
+                <p ><input id="unix" placeholder="UNIX Timestamp"><br><br>
+                    <strong>Date:</strong><br><br>
+                    <input type="date" id="date"><br>
+                    <input TYPE="time" id="time"><br><br>
+                    <strong>Customise:</strong><br><br>
+                    <input id="title" placeholder="Title"><br>
+                    <input id="show-title" type="checkbox" checked>Show title on page<br><br>
+                    Font Style:
+                    <select id="fontstyle">
+                        <option>Sans Serif</option>
+                        <option>Serif</option>
+                    </select><br><br>
+                    <input id="short" type="checkbox">Use long format
+                    <br><br><button id="gen">Generate</button>
+                </p>
 
-    <div class="tool">
-        <h2>Timer Generator</h2>
-        <p>Copy the url on the page that opens to keep the timer.</p>
-        <p>Leave the UNIX timestamp empty if you want to use the date picker.</p>
-        <p style="margin: 10px; text-align: left;"><input id="unix" placeholder="UNIX Timestamp"><br><br>
-        <strong>Date:</strong><br><br>
-        <input type="date" id="date"><br>
-        <input TYPE="time" id="time"><br><br>
-        <strong>Customise:</strong><br><br>
-        <input id="title" placeholder="Title"><br>
-        <input id="show-title" type="checkbox" checked>Show title on page<br><br>
-        Font Style:
-        <select id="fontstyle">
-            <option>Sans Serif</option>
-            <option>Serif</option>
-        </select><br><br>
-        <input id="short" type="checkbox">Use long format
-        <br><br><button id="gen">Generate</button></p>
+                <script src="/js/unixconv.js"></script>
+                <script src="/js/generate.js"></script>
+            </div>
+        </li>
 
-        <script src="/js/unixconv.js"></script>
-        <script src="/js/generate.js"></script>
-    </div>
+        <li>
+            <div class="tool">
+                <h2>Discord Timestamp Generator</h2>
+                <p>Use this to generate a timestamp to send in Discord. Not finished<br><br>
+                <input id="unix" placeholder="UNIX Timestamp"><br><br>
+                    <strong>Date:</strong><br><br>
+                    <input type="date" id="date"><br>
+                    <input TYPE="time" id="time"><br><br></p>
+            </div>
+        </li>
+    </ul>
 
 </body>
